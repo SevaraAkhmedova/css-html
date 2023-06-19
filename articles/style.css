@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.classes_section {
+  background-color: #282a35;
+  padding: 3rem 1rem;
+}
+
+.classes_container {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3rem;
+  margin: auto;
+}
+
+.classes_container > article {
+  width: 600px;
+  padding: 3rem 1rem;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.classes_container > article > h1 {
+  font-size: 2.5rem;
+}
+
+.classes_container > article > p {
+  margin: 1rem 0;
+}
+
+.classes_container > article > button {
+  width: 200px;
+  padding: 0.6rem 0;
+  font-size: 1.1rem;
+  background-color: #282a35;
+  color: white;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+}
+
+.classes_container > article > button:hover {
+  background-color: black;
+}
+
+.classes_container > article:nth-child(1) {
+  background-color: lightpink;
+}
+
+.classes_container > article:nth-child(2) {
+  background-color: lightgreen;
+}
+
+.classes_container > article:nth-child(3) {
+  background-color: lightcyan;
+}
+
+.classes_container > article:nth-child(4) {
+  background-color: lightseagreen;
+}
+
+.classes_container > article:nth-child(5) {
+  background-color: lightslategray;
+}
+
+.classes_container > article:nth-child(6) {
+  background-color: lightyellow;
+}
+
+@media only screen and (max-width: 700px) {
+  .classes_container {
+    width: 90%;
+    justify-content: center;
+  }
+}

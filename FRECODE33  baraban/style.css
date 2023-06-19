@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  background-color: #eee;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+}
+
+nav > img {
+  width: 300px;
+  height: 40px;
+}
+
+nav > ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav > ul > li {
+  margin: 0 2rem;
+}
+
+nav > .icon_classes {
+  display: none;
+}
+
+.header_content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.header_content > h1 {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.header_content > input {
+  text-align: start;
+  margin: 1rem 0;
+  padding: 5px 45px 5px 2px;
+  background-color: white;
+  border: 1px solid grey;
+}
+
+.header_content > h2 {
+  font-size: 18px;
+  background-color: #f1c40f;
+  padding: 7px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem;
+}
+
+.info_wrapper {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.info_wrapper > i {
+  color: darkorange;
+  margin-right: 3rem;
+}
+
+.trombone {
+  margin: 5rem 1rem;
+}
+
+.article_wrapper {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.article_wrapper > article {
+  display: grid;
+  gap: 1rem;
+  border: 1px solid grey;
+  text-align: center;
+  width: 28%;
+}
+
+.article_wrapper > article > h1 {
+  background-color: #ddd;
+  padding: 1rem 3rem;
+}
+
+.article_wrapper > article > span {
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.article_wrapper > article > ul {
+  list-style-type: none;
+}
+
+.article_wrapper > article > ul > li {
+  margin: 10px 0;
+}
+
+.article_wrapper > article > button {
+  width: 100px;
+  margin: 0 auto 1rem auto;
+  background-color: #f1c40f;
+  border: none;
+  padding: 10px 15px;
+}
+
+footer {
+  margin: auto;
+  text-align: end;
+  width: 80%;
+  margin-bottom: 2rem;
+}
+
+footer > ul {
+  gap: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  margin: 14px 10px;
+}
+
+footer > p {
+  color: #afafaf;
+}
+
+@media only screen and (max-width: 800px) {
+  nav {
+    padding: 1rem;
+  }
+
+  nav > ul {
+    display: none;
+  }
+
+  nav > .icon_classes {
+    display: block;
+  }
+  section {
+    margin: 2rem;
+  }
+
+  .trombone > iframe {
+    width: 350px;
+    margin: 0 1rem;
+  }
+
+  .article_wrapper {
+    flex-direction: column;
+  }
+
+  .article_wrapper > article {
+    width: 60%;
+    margin: 2rem 0;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .article_wrapper > article {
+    width: 80%;
+    margin: 2rem 0;
+  }
+}

@@ -1,0 +1,540 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  align-items: center !important;
+}
+
+nav {
+  background-color: white;
+  padding: 0 2rem;
+  box-shadow: rgba(204, 204, 204, 0.352) 0px 7px 29px 0px;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  height: 10vh;
+}
+.nav_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  height: 100% !important;
+}
+
+.nav_img {
+  display: flex;
+  align-items: center;
+}
+
+.nav_img > h1 {
+  font-size: 2rem;
+}
+
+.nav_ul {
+  display: flex;
+  list-style-type: none;
+  color: grey;
+  height: 100%;
+}
+
+.nav_ul > li {
+  border: 1px solid grey;
+  width: 140px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s all;
+}
+
+.nav_ul > li:hover {
+  background-color: #df394a;
+  color: white;
+}
+
+.navi {
+  display: none !important;
+  font-size: 1.5rem;
+  color: #df394a;
+  border: black;
+  border-radius: 15px;
+  padding: 1rem;
+  position: relative;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.dropdown {
+  transform: translateY(4rem);
+  visibility: hidden;
+  transition: 0.3s ease;
+  position: absolute;
+  right: 2px;
+  opacity: 0;
+}
+
+.dropdown > li {
+  background-color: white;
+  color: grey;
+  font-size: 15px;
+  font-weight: 200;
+  list-style-type: none;
+  padding: 10px 2rem;
+  text-transform: lowercase;
+  cursor: pointer;
+}
+
+.dropdown > li:hover {
+  color: white;
+  background-color: #df394a;
+}
+
+.navi:hover > .dropdown {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(2rem);
+}
+
+header {
+  background-image: url(https://www.tooplate.com/templates/2095_level/img/bg-img-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  max-width: 1600px;
+  margin: auto;
+  height: 700px;
+  justify-content: center;
+}
+
+.form_container {
+  max-width: 1100px;
+
+  margin: 1rem auto;
+  padding: 1.5rem;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.form_container > form {
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.form_container > form i {
+  color: #df394a;
+  padding-bottom: 1rem;
+  gap: 2rem;
+  margin: auto;
+}
+
+.form_container > form i input {
+  color: grey;
+  font-size: 0.9rem;
+  flex-wrap: wrap;
+  border: #df3945;
+  padding: 10px 1rem;
+}
+
+.form_container > form i select {
+  margin: 10px 1rem;
+  padding: 10px 2rem;
+  flex-wrap: wrap;
+  border: #df3945;
+}
+
+.form_container > form input,
+select {
+  background-color: #f1f1f1;
+}
+
+#submit {
+  color: white;
+  background-color: #df394a;
+  border: none;
+  padding: 10px 2rem;
+}
+
+#submit:hover {
+  background-color: #6e39df;
+}
+
+.forms_info {
+  justify-content: space-between;
+  color: GREY;
+  display: flex;
+  margin: 1rem 0;
+  text-transform: lowercase;
+}
+
+main {
+  align-items: center;
+  text-align: center;
+
+  font-family: sans-serif;
+}
+
+.main_btn {
+  background-color: #df3945;
+  color: white;
+  padding: 3rem;
+}
+
+.main_btn > h1 {
+  padding-top: 2rem;
+  font-size: 2.5rem;
+}
+.main_btn > p {
+  padding: 10px 0;
+  font-size: 1rem;
+}
+.main_btn > button {
+  padding: 13px 1.6rem;
+  color: white;
+  margin-top: 1rem;
+  background-color: #df3945;
+  border: 1px solid white;
+}
+
+.main_btn > button:hover {
+  background-color: #6e39df;
+  border: none;
+}
+
+.main_info {
+  max-width: 1200px;
+  margin: 3rem auto;
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.main_art {
+  display: grid;
+  align-items: center;
+  color: black;
+  justify-content: space-between;
+  width: 300px;
+  padding: 1rem;
+  margin: 2rem auto;
+}
+
+.main_art:hover {
+  box-shadow: hsla(240, 2%, 12%, 0.2) 0px 7px 29px 0px;
+}
+.main_art > i {
+  color: #df3945;
+  font-size: 3rem;
+  padding: 4px;
+  margin: 1rem;
+}
+
+.main_art > a,
+h3 {
+  color: #df3945;
+  text-decoration: none;
+}
+
+.main_art > p {
+  color: grey;
+  padding: 10px 0;
+}
+
+.img_container1 {
+  margin-top: 7rem !important;
+  max-width: 1200px;
+  justify-content: space-between;
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.img_article > p {
+  color: #525050;
+  font-size: 14px;
+}
+
+.img_article {
+  max-width: 370px;
+  margin: auto;
+  box-shadow: hsla(240, 2%, 12%, 0.2) 0px 7px 29px 0px;
+  justify-content: center;
+}
+.img_article > h3,
+p,
+button {
+  padding: 10px 2rem;
+}
+
+.img_article > button {
+  background-color: #df3945;
+  padding: 10px 1.5rem;
+  margin: 1rem 8rem;
+  color: white;
+  font-size: 13px;
+  border: none;
+}
+
+.img_article > button:hover {
+  background-color: #6e39df;
+}
+.img_article1 {
+  list-style-type: none;
+  margin: 0 13px;
+  justify-self: center;
+  box-shadow: hsla(240, 2%, 12%, 0.2) 0px 7px 29px 0px;
+}
+
+.img_article1 > img {
+  max-width: 370px;
+}
+
+.img_article1 > div > p {
+  color: white;
+  background-color: #df3945;
+  padding: 1rem;
+}
+
+.img_article1 > div > p:nth-child(1) {
+  font-size: 1.5rem;
+}
+
+.img_article1 > ul {
+  margin-top: 1rem;
+  list-style-type: none;
+}
+
+.img_article1 > ul > li {
+  margin: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  align-items: center;
+  justify-content: space-between;
+  color: #df3945;
+  text-transform: uppercase;
+  align-items: center;
+  display: flex;
+}
+
+.img_article1 > ul > li:hover {
+  background-color: #aca9a9;
+}
+
+.video_container {
+  max-width: 1500px;
+  height: 515px;
+  z-index: 1;
+  background-image: url(https://ogorshkov.ru/wp-content/uploads/9/4/0/940241fc6e03d312bea153456e771ca3.jpeg);
+  /* Add the blur effect */
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  margin: 3rem;
+  justify-content: center;
+}
+
+.video_container > i {
+  filter: none !important;
+  color: white;
+}
+
+.video_container > i:hover {
+  display: block;
+}
+
+.singapore_container {
+  background-image: url(https://img.freepik.com/free-photo/blur-hospital-clinic-interior_1203-8618.jpg?w=996&t=st=1684153889~exp=1684154489~hmac=5bb0a82bbc74f990a064006f43125d0d45facef6ab9ddb4993f44e23a4af5d68);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.singapore_heading {
+  justify-content: baseline;
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.singapore_heading > h1 {
+  font-size: 3rem;
+}
+
+.singapore_heading > p {
+  font-size: 2rem;
+  color: #df3945;
+}
+
+.singapore_btn {
+  display: flex;
+
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.singapore_btn > article {
+  max-width: 650px;
+  height: 240px;
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  margin: 0.8rem auto;
+}
+
+.singapore_info {
+  text-align: center;
+  padding-top: 2rem;
+  padding: 10px 1rem;
+}
+
+.singapore_info:first-child {
+  padding: 1rem;
+}
+.singapore_info > p {
+  color: grey;
+  font-size: 14px;
+}
+
+.singapore_info > h3 {
+  color: #df3945;
+}
+
+.contact_section {
+  background-image: url(https://www.tooplate.com/templates/2095_level/img/bg-img-3.jpg);
+  display: flex;
+  height: 800px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.map_container {
+  max-width: 500px;
+}
+
+.form_container3 {
+  display: grid;
+  place-items: center;
+  max-width: 500px;
+  padding: 3rem 1rem;
+}
+
+.forms {
+  background-color: white;
+  display: grid;
+  padding: 1rem;
+}
+
+.forms > input,
+.forms > textarea {
+  padding: 10px 20px;
+  background-color: #f1f1f1;
+  margin: 6px 0;
+}
+
+.forms > button {
+  width: 100%;
+  margin: 5px 0;
+  padding: 1rem 0;
+  background-color: #df3945;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.forms > button:hover {
+  background-color: #6e39df;
+}
+
+.map_container > iframe {
+  height: 440px;
+}
+
+footer {
+  text-align: center;
+  background-color: #333b44;
+  color: white;
+  padding: 2rem;
+}
+
+@media only screen and (max-width: 980px) {
+  .nav_ul {
+    display: none;
+  }
+
+  .navi {
+    display: block !important;
+  }
+  header {
+    height: 800px;
+    padding-bottom: 5rem;
+  }
+
+  .form_container {
+    margin: 3rem;
+    margin-top: 14rem;
+  }
+  form > i {
+    display: flex;
+  }
+  main {
+    padding-top: 6rem;
+    /* height: 760px; */
+  }
+
+  .main_info > article {
+    margin: 3rem;
+    width: 100%;
+  }
+
+  .img_article {
+    margin: 1rem;
+  }
+
+  .video_container {
+    height: 30vh;
+  }
+
+  .singapore_container,
+  .contact_section {
+    display: flex;
+    flex-direction: column;
+  }
+  .singapore_btn article:first-child {
+    height: 560px;
+  }
+  .singapore_btn article {
+    flex-direction: column;
+    max-width: 280px;
+    height: 450px;
+  }
+
+  .contact_section {
+    height: 1000px;
+    background-image: url(https://www.tooplate.com/templates/2095_level/img/bg-img-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .map_container {
+    paddinhg: 8rem 3rem 0rem;
+  }
+  .form_container3 {
+    padding: 0 3rem 0;
+  }
+}

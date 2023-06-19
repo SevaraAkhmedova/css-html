@@ -1,0 +1,365 @@
+:root {
+  --main-darc: #1f2122;
+  --main-gray: #27292a;
+  --main-pink: #ec6090;
+  --main-lightGray: #666;
+  --transition: 0.5s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.active {
+  color: var(--main-pink);
+}
+body {
+  background-color: var(--main-darc);
+}
+nav {
+  max-width: calc(1300px + 2rem);
+  margin: 1rem auto 2rem;
+  height: 10vh;
+  padding: 1rem;
+}
+
+.nav_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_left {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.nav_left input {
+  padding: 1rem;
+  border-radius: 30px;
+  background-color: var(--main-gray);
+  border: none;
+  outline: none;
+  color: white;
+  position: relative;
+  margin-right: 1rem;
+}
+
+.nav_content > ul {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  color: var(--main-lightGray);
+  font-size: 15px;
+}
+
+.nav_content > ul > li {
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.nav_content > ul > li:hover {
+  color: var(--main-pink);
+}
+
+.nav_content > ul > li:nth-of-type(5) {
+  width: 110px;
+  padding: 7px 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: end;
+  border-radius: 30px;
+  background-color: var(--main-gray);
+  transition: var(--transition);
+}
+
+.nav_content > ul > li:nth-of-type(5) > img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.nav_content > ul > li:nth-of-type(5):hover {
+  background-color: var(--main-pink);
+  color: white;
+}
+
+.menu {
+  display: none;
+  color: var(--main-lightGray);
+  font-size: 1.5rem;
+}
+
+.mobile_nav {
+  color: #666;
+  list-style: none;
+  position: relative;
+  top: 1.1rem;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s ease;
+}
+.mobile_nav > li {
+  padding: 1rem;
+  background-color: #27292a;
+  transition: 0.3s ease;
+}
+.mobile_nav > li:hover {
+  background-color: #1f2122;
+  color: palevioletred;
+}
+.showNav {
+  height: 205px;
+}
+
+main {
+  max-width: 1300px;
+  margin: auto;
+  background-color: var(--main-gray);
+  border-radius: 20px;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+header {
+  border-radius: 20px;
+  background-image: url(https://templatemo.com/templates/templatemo_579_cyborg_gaming/assets/images/banner-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  padding: 5rem 3rem;
+  color: white;
+}
+
+header p {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+header button {
+  width: 160px;
+  padding: 14px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  background-color: var(--main-pink);
+  color: white;
+  font-size: 14px;
+  transition: var(--transition);
+}
+
+header button:hover {
+  background-color: white;
+  color: var(--main-pink);
+}
+
+.game_card,
+.library_section {
+  padding: 1.5rem;
+  background-color: var(--main-darc);
+  border-radius: 25px;
+  position: relative;
+}
+
+.game_card > h1,
+.library_section > h1 {
+  font-size: 2.2rem;
+  color: var(--main-pink);
+  margin-bottom: 2rem;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.card article {
+  background-color: var(--main-gray);
+  border-radius: 25px;
+  padding: 25px 15px;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  gap: 10px;
+}
+.card article img {
+  width: 100%;
+  grid-column: 1/3;
+  border-radius: 25px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.card article i {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  font-size: 13px;
+  gap: 4px;
+}
+.card article p {
+  color: white;
+}
+
+.star {
+  color: gold;
+}
+
+.down {
+  color: var(--main-pink);
+}
+
+.duality {
+  grid-column: 1/3;
+  display: flex;
+  background-color: var(--main-gray);
+  border-radius: 25px;
+}
+
+.duality > article {
+  width: 50%;
+}
+
+.game_card button,
+.library_section > button {
+  position: absolute;
+  bottom: -1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 3rem;
+  width: 200px;
+  padding: 0 10px;
+  border-radius: 30px;
+  border: none;
+  background-color: var(--main-pink);
+  color: white;
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+.game_card button:hover,
+.library_section > button:hover {
+  background-color: white;
+  color: var(--main-pink);
+}
+
+.dota {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  border-bottom: 1px solid var(--main-lightGray);
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.dota_left {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.dota_left > img {
+  border-radius: 25px;
+}
+
+.dota h1 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.dota p {
+  color: var(--main-lightGray);
+  font-size: 15px;
+}
+
+.dota_center {
+  display: flex;
+  width: 500px;
+  justify-content: space-between;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.dota > button {
+  width: 150px;
+  padding: 15px;
+  border-radius: 30px;
+  border: none;
+  background-color: var(--transition);
+  border: 1px solid var(--main-lightGray);
+  color: var(--main-lightGray);
+  transition: var(--transition);
+}
+
+.dota > button:hover {
+  background-color: white;
+  color: var(--main-pink);
+}
+
+footer {
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem;
+  line-height: 30px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .nav_left > input {
+    display: none;
+  }
+
+  .card {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .nav_content ul {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  .card {
+    grid-template-columns: auto;
+  }
+
+  .duality {
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .duality > article {
+    width: 100%;
+  }
+}

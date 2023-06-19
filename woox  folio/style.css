@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #22b3c1;
+  color: white;
+  padding: 1rem 2rem;
+  height: 15vh;
+  position: fixed;
+  width: 100%;
+}
+
+nav > h1 {
+  font-size: 2rem;
+}
+
+nav > ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav > ul > li {
+  margin: 1rem;
+  font-size: 1.4rem;
+}
+
+header {
+  height: 100vh;
+  background-image: url(https://images.unsplash.com/photo-1532370184535-22cec5ca8480?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 10% 10%;
+ object-fit: cover;
+  animation: img 5s infinite;
+}
+
+@keyframes img {
+  0% {
+    background-image: url(https://images.unsplash.com/photo-1548663805-9fb5fa7de70d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80);
+  }
+
+  50% {
+    background-image: url(https://images.unsplash.com/photo-1442548520776-20acf66617df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fHRhaWxhbmR8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+  }
+
+  100% {
+    background-image: url(https://images.unsplash.com/photo-1520961810802-7f0a32de665a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1291&q=80);
+  }
+}
+
+.header_content {
+  background-color: rgba(0, 0, 0, 0.654);
+  height: 100%;
+  /* margin: 5rem 0; */
+  padding: 9rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+.header_content > h1 {
+  margin: 2rem 0;
+  font-size: 3rem;
+  /* animation: font 5s infinite; */
+}
+
+@keyframes font {
+    0% {
+        font-size: 10px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: aqua;
+    }
+
+    50%{
+        font-size: 1rem;
+        color: red;
+    }
+
+    100%{
+        font-size: 3rem;
+        color: blue;
+    }
+}
+
+.header_content > p {
+  font-size: 18px;
+}
+
+.header_content > button {
+  padding: 1rem 2rem;
+  color: #22b3c1;
+  border-radius: 30px;
+  border: 1px solid #22b3c1;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.5s all;
+  letter-spacing: 0.5px;
+  outline: none;
+}
+.header_content > button:hover {
+  background-color: #22b3c1;
+  color: white;
+  transform: translateY(5px);
+}
+
+.header_article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  margin: auto;
+  border: 1px solid white;
+  border-radius: 30px;
+  justify-content: space-between;
+  padding: 3rem 2rem;
+  background-color: white;
+  color: black;
+}
+
+.header_article > div {
+  display: flex;
+  align-items: center;
+}
+
+.header_article > div > .user_content {
+  margin-left: 1rem;
+}
+
+.header_article > div > i {
+  font-size: 1.5rem;
+  border: 1px solid #22b3c1;
+  border-radius: 50%;
+  padding: 1rem;
+  color: #22b3c1;
+}
+
+.user_content > p {
+  color: gray;
+}
+
+.header_article > button {
+  padding: 1rem;
+  background-color: #22b3c1;
+  border: 1px solid #22b3c1;
+  color: white;
+  border-radius: 30px;
+  letter-spacing: 1px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+
+.header_article > button:hover {
+  background-color: #348b93;
+}
+
+.last_section {
+  background-image: url("https://img.freepik.com/free-photo/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_1258-63451.jpg?w=1380&t=st=1678103182~exp=1678103782~hmac=4db808354fa629679c4e164b59e50a20e7a4a3cfbb1acac40076c213e5e97c40");
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+  height: 30vh;
+}
+.last_section > button {
+  background-color: #22b3c1;
+  color: white;
+  padding: 0.7rem 1rem;
+  border-radius: 26px;
+  border
+}
